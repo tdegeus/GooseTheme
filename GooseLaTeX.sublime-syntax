@@ -1,0 +1,47 @@
+%YAML 1.2
+---
+name: GooseLaTeX
+file_extensions:
+  - tex
+scope: text.tex.latex.gooselatex
+contexts:
+  prototype:
+    - include: comments
+  main:
+    - include: custom
+    - include: scope:text.tex.latex
+
+  comments:
+    - include: scope:text.tex#comments
+
+  custom:
+    - match: '((\\)footnote)(\{)'
+      captures:
+        1: support.function.footnote.latex
+        2: punctuation.definition.backslash.latex
+        3: punctuation.definition.group.brace.begin.latex
+      push:
+        - meta_scope: meta.function.footnote.latex
+        - meta_content_scope: markup.italic.footnote.latex
+        - match: '\}'
+          scope: punctuation.definition.group.brace.end.latex
+          pop: true
+        - include: main
+    - match: '((\\)begin)(\{)\s*(figure\*?)\s*(\})'
+      captures:
+        1: support.function.begin.latex keyword.control.flow.begin.latex
+        2: punctuation.definition.backslash.latex
+        3: punctuation.definition.group.brace.begin.latex
+        4: variable.parameter.function.latex
+        5: punctuation.definition.group.brace.end.latex
+      push:
+        - meta_scope: meta.environment.list.figure.latex
+        - match: '((\\)end)(\{)\s*(\4)\s*(\})'
+          captures:
+            1: support.function.end.latex keyword.control.flow.begin.latex
+            2: punctuation.definition.backslash.latex
+            3: punctuation.definition.group.brace.begin.latex
+            4: variable.parameter.function.latex
+            5: punctuation.definition.group.brace.end.latex
+          pop: true
+        - include: main
