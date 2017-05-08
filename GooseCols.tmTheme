@@ -527,7 +527,7 @@
         <key>settings</key>
         <dict>
           <key>background</key>
-          <string>#2E0707</string>
+          <string>#072E29</string>
           <key>foreground</key>
           <string>#CCCCCC</string>
         </dict>
@@ -543,7 +543,7 @@
           <key>fontStyle</key>
           <string>bold</string>
           <key>foreground</key>
-          <string>#CCCCCC</string>
+          <string>#F3E87E</string>
         </dict>
       </dict>
 

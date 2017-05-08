@@ -1,3 +1,16 @@
 # GooseTheme
 
-Color theme for Sublime Text 3. Besides a custom selection of colors this theme features some highlighting features for LaTeX (using `GooseLaTeX.sublime-theme`). 
+Color theme for Sublime Text 3.
+
+*   `GooseCols.tmTheme`: custom color theme.
+*   `GooseLaTeX.sublime-theme`: extension of highlighting features for LaTeX, including enabling highlighting of `\begin{figure} ... \end{figure}`.
+
+## Usage
+
+1.  Place the configuration files in:
+
+    *   macOS: `~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User`
+
+2.  Select `GooseCols` from `Preferences > Color Scheme > User`.
+
+
