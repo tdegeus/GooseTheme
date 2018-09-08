@@ -70,6 +70,8 @@
       <string>comment</string>
       <key>settings</key>
       <dict>
+        <key>fontStyle</key>
+        <string>italic</string>
         <key>foreground</key>
         <string>#757575</string>
       </dict>
@@ -524,6 +526,20 @@
         <string>Latex: Figure</string>
         <key>scope</key>
         <string>meta.environment.list.figure.latex</string>
+        <key>settings</key>
+        <dict>
+          <key>background</key>
+          <string>#072E29</string>
+          <key>foreground</key>
+          <string>#CCCCCC</string>
+        </dict>
+      </dict>
+
+      <dict>
+        <key>name</key>
+        <string>Latex: Table</string>
+        <key>scope</key>
+        <string>meta.environment.list.table.latex</string>
         <key>settings</key>
         <dict>
           <key>background</key>
