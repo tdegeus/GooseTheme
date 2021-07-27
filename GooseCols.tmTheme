@@ -224,6 +224,17 @@
     </dict>
     <dict>
       <key>name</key>
+      <string>Member variable</string>
+      <key>scope</key>
+      <string>variable.other.readwrite.member.c++</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key>
+        <string>#D2FFC4</string>
+      </dict>
+    </dict>
+    <dict>
+      <key>name</key>
       <string>Tag name</string>
       <key>scope</key>
       <string>entity.name.tag</string>

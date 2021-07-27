@@ -13,4 +13,6 @@ Color theme for Sublime Text 3.
 
 2.  Select `GooseCols` from `Preferences > Color Scheme > User`.
 
+## Tips
 
+Use the scope hunter to `Ctrl + Shift + P` to get the scope of the element under the cursor.
